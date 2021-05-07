@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/307e3dac6d.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@200&display=swap" rel="stylesheet">
+    <script src="script.js" async></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="searchbar">
+            <input id="input-title" type="text" placeholder="Enter movie title or IMDB Id">
+            <input id="input-year" type="text" placeholder="Enter year (not required)">
+            <button id="searchBtn"><i class="fas fa-search"></i></button>
+        </div>
+        <div class="starting-page">
+            <div class="starting-content">
+                <div class="loader">
+                    <div class="lds-roller">
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </div>
+                </div>
+                <div class="starting-message">
+                    <div class="hand-icon"><i class="far fa-hand-pointer"></i></div>
+                    <div class="starting-text">Enter Movie Title</div>
+                </div>
+            </div>
+        </div>
+        <div class="movie-content">
+            <div class="left-half">
+            </div>
+            <div class="right-half">
+                <div class="title-year-rating">
+                    <h2 class="title"></h2>
+                    <br>
+                    <div class="year-rating">
+                        <p class="year"><b>release year: </b><span class="releaseDate"></span></p>
+                        <br>
+                        <div class="rating">
+                            <div class="imdb"><i class="fab fa-imdb"></i>&nbsp; <span id="imdbText"></span></div>
+                            <div class="tomato">
+                                <img src="/images/tomato.png" alt="">&nbsp; <span id="rottenTomatoes"></span>
+                            </div>
+                            <div class="metacritic">
+                                <img src="/images/metacritic.png" alt="">&nbsp; <span id="metacritic"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <div class="other-info">
+                    <div class="director">
+                        <b>
+                            <div>Directed by</div>
+                        </b>
+                        <span>:</span>&nbsp;
+                        <div id="director"></div>
+                    </div>
+                    <div class="genre">
+                        <b>
+                            <div>Genre</div>
+                        </b>
+                        <span>:</span>&nbsp;
+                        <div id="genre"></div>
+                    </div>
+                    <div class="country">
+                        <b>
+                            <div>Country</div>
+                        </b>
+                        <span>:</span>&nbsp;
+                        <div id="country"></div>
+                    </div>
+                    <div class="box-office">
+                        <b>
+                            <div>Box office</div>
+                        </b>
+                        <span>:</span>&nbsp;
+                        <div id="box-office"></div>
+                    </div>
+                    <div class="actors">
+                        <b>
+                            <div>Actors</div>
+                        </b>
+                        <span>:</span>&nbsp;
+                        <div id="actors">
+                        </div>
+                    </div>
+                    <div class="company">
+                        <b>
+                            <div>Production Company</div>
+                        </b>
+                        <span>:</span>&nbsp;
+                        <div id="company"></div>
+                    </div>
+                    <div class="runtime">
+                        <b>
+                            <div>Runtime</div>
+                        </b>
+                        <span>:</span>&nbsp;
+                        <div id="runtime"></div>
+                    </div>
+                    <div class="age">
+                        <b>
+                            <div>Age</div>
+                        </b>
+                        <span>:</span>&nbsp;
+                        <div id="age"></div>
+                    </div>
+                </div>
+                <br>
+                <div class="about">
+                    <b>
+                        <span">About movie</span>
+                    </b>
+
+                    <p class="about-info" id="about">
+
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
