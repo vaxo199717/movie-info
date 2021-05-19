@@ -35,7 +35,7 @@ searchBtn.addEventListener('click', () => {
         movieName = 't=' + inputTitle.value
     }
     let movieYear = inputYear.value;
-    let url = `http://www.omdbapi.com/?${movieName}&y=${movieYear}&plot=full&apikey=9d186439`;
+    let url = `https://www.omdbapi.com/?${movieName}&y=${movieYear}&plot=full&apikey=9d186439`;
     startingPage.style.display = 'block';
     startingMessage.style.display = 'none';
     loader.style.display = 'block';
