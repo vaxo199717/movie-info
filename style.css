@@ -315,6 +315,12 @@ body {
 }
 
 @media (max-width: 1080px) {
+  .container .searchbar {
+    width: 100vw;
+  }
+  .container .starting-page {
+    width: 100vw;
+  }
   .container .movie-content {
     width: 100%;
     display: block;
