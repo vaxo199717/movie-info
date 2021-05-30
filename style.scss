@@ -26,37 +26,40 @@ body{
     background-color:#090909;
 
     .searchbar{
-        padding: 10px 0 10px 0;
         width: 680px;
         margin-left: auto;
         margin-right: auto;
-       
-        height: 40px;
-        display:flex;
-        #input-title{
+        .searchContent{
+          padding: 10px 0 10px 0;
+          width: 680px;
+          margin-left: auto;
+          margin-right: auto;
+          height: 40px;
+          display:flex;
+          #input-title{
             @include inputStyle;
             width: 400px;
-
-        }
-        #input-year{
-            @include inputStyle;
-            width: 250px;
-        }
-        #searchBtn{
-            font-size: 20px;
-            cursor:pointer;
-            background-color: #94ddff;
-            color:#000000;
-            outline:none;
-            border-style: solid;
-            border-width: 1px;
-            border-color: transparent;
-            width: 40px;
-            &:hover{
-                background-color: #70d2ff;
-                border-radius: 0 10px 10px 0;
-                transition: all 500ms;
-            }
+          }
+          #input-year{
+              @include inputStyle;
+              width: 250px;
+          }
+          #searchBtn{
+              font-size: 20px;
+              cursor:pointer;
+              background-color: #94ddff;
+              color:#000000;
+              outline:none;
+              border-style: solid;
+              border-width: 1px;
+              border-color: transparent;
+              width: 40px;
+              &:hover{
+                  background-color: #70d2ff;
+                  border-radius: 0 10px 10px 0;
+                  transition: all 500ms;
+              }
+          }
         }
     }
     .starting-page{
@@ -67,7 +70,6 @@ body{
         background-color:#090909;
         .starting-content{
             margin-top: 100px;
-
             .loader{
                 display:none;
                 margin-top: 220px;
@@ -94,7 +96,6 @@ body{
     .movie-content{
         display:flex;
         .left-half{
-           
             height: auto;
             width: 45%;
             display: flex;
@@ -109,7 +110,6 @@ body{
             }
         }
         .right-half{
-            
             padding-left: 50px;
             width: 70%;
             color: white;
@@ -118,7 +118,6 @@ body{
                     font-size: 20px;
                     .rating{
                         width:250px;
-
                         display: flex;
                         justify-content: space-between;
                         align-items: center;
@@ -138,13 +137,10 @@ body{
                 }
             }
             .other-info{
-             
                 div{
                     display: flex;
-
                     margin-bottom: 5px;
                     :first-child{
-
                         width: 200px;
                         height: auto;
                     }
@@ -155,7 +151,6 @@ body{
             }
         }
     }
-
 }
 
 .lds-roller {
@@ -243,10 +238,28 @@ body{
     }
   }
 
-  @media (max-width: 1080px){
-   .container{
-     .searchbar{
-       width: 100vw;
+@media (max-width: 1080px){
+  .container{
+      width: 100vw;
+      .searchbar{
+        width: 100vw;
+        height: 100px;
+        padding:0;
+        flex-direction: column;
+        .searchContent{
+          justify-content: center;
+          width: 100vw;
+          background-color: red;
+          #input-title{
+            width: 50%;
+          }
+          #input-year{
+            width: 40%;
+          }
+          #searchBtn{
+            
+          }
+        }
      }
      .starting-page{
        width: 100vw;
@@ -267,4 +280,4 @@ body{
       }
     }
    }
-  }
+}

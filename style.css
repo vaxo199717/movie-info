@@ -19,6 +19,12 @@ body {
 }
 
 .container .searchbar {
+  width: 680px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.container .searchbar .searchContent {
   padding: 10px 0 10px 0;
   width: 680px;
   margin-left: auto;
@@ -29,7 +35,7 @@ body {
   display: flex;
 }
 
-.container .searchbar #input-title {
+.container .searchbar .searchContent #input-title {
   padding-left: 10px;
   border-style: solid;
   font-size: 15px;
@@ -40,7 +46,7 @@ body {
   width: 400px;
 }
 
-.container .searchbar #input-year {
+.container .searchbar .searchContent #input-year {
   padding-left: 10px;
   border-style: solid;
   font-size: 15px;
@@ -51,7 +57,7 @@ body {
   width: 250px;
 }
 
-.container .searchbar #searchBtn {
+.container .searchbar .searchContent #searchBtn {
   font-size: 20px;
   cursor: pointer;
   background-color: #94ddff;
@@ -63,7 +69,7 @@ body {
   width: 40px;
 }
 
-.container .searchbar #searchBtn:hover {
+.container .searchbar .searchContent #searchBtn:hover {
   background-color: #70d2ff;
   border-radius: 0 10px 10px 0;
   -webkit-transition: all 500ms;
@@ -315,8 +321,30 @@ body {
 }
 
 @media (max-width: 1080px) {
+  .container {
+    width: 100vw;
+  }
   .container .searchbar {
     width: 100vw;
+    height: 100px;
+    padding: 0;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .container .searchbar .searchContent {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 100vw;
+    background-color: red;
+  }
+  .container .searchbar .searchContent #input-title {
+    width: 50%;
+  }
+  .container .searchbar .searchContent #input-year {
+    width: 40%;
   }
   .container .starting-page {
     width: 100vw;
