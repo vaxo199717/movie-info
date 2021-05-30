@@ -5,7 +5,7 @@
 }
 
 body {
-  background-color: #0e0e0e;
+  background-color: #ff0000;
 }
 
 .container {
@@ -311,6 +311,20 @@ body {
   100% {
     -webkit-transform: rotate(360deg);
             transform: rotate(360deg);
+  }
+}
+
+@media (max-width: 1080px) {
+  .container .movie-content {
+    width: 100%;
+    display: block;
+  }
+  .container .movie-content .left-half {
+    width: 100%;
+  }
+  .container .movie-content .left-half .poster {
+    width: 40vw;
+    height: auto;
   }
 }
 /*# sourceMappingURL=style.css.map */
